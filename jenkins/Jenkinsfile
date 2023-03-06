@@ -1,15 +1,15 @@
 pipeline {
     agent any
     tools {
-        maven 'MV_HOME'
-        jdk 'JAVA_HOME'
+        maven 'Mv_home'
+        jdk 'Java_home'
     }
     stages {
         stage ('Initialize') {
             steps {
                 sh '''
                     echo "PATH = ${PATH}"
-                    echo "MV_HOME = ${MV_HOME}"
+                    echo "Mv_home = ${MV_HOME}"
                 '''
             }
         }
